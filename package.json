@@ -9,17 +9,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scriptnull/cmd-vortex.git"
+  },
   "keywords": [
     "command",
     "send",
     "files",
     "terminal"
   ],
-  "author": "",
+  "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)",
   "license": "GPL-3.0",
   "dependencies": {
     "chalk": "^1.1.1",
     "furious": "^0.2.0",
     "send-anywhere": "^1.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/scriptnull/cmd-vortex/issues"
   }
 }
