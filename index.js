@@ -69,7 +69,15 @@ furious
 	.alias(['r']);
 
 furious.execute(process.argv, 'Transfer files from command line.', function () {
-	console.log('cmd-vortex - File Transfer for Developers');
+	console.log('cmd-vortex - Transfer files from Command Line');
+	console.log();
+	console.log('Commands : ');
+	console.log();
+	console.log('	vortex send <filename>');
+	console.log('		Send a file from command line.');
+	console.log();
+	console.log('	vortex receive <key>');
+	console.log('		Receive a file from command line.')
 }, function () {
 	console.log();
 });
