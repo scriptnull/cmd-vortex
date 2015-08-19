@@ -35,26 +35,8 @@ var uploadFile = function (fileName) {
 	});
 };
 
-//var downloadFile = function()
-
-furious
-	.command('send', 'Send a file.', function (args) {
-		if (args.length == 1) {
-			//only one file
-			uploadFile(args[0]);
-		} else {
-			args.forEach(function (val) {
-				uploadFile(val);
-			});
-		}
-	})
-	.alias(['s']);
-
-
-
-furious
-	.command('receive', 'Receive a file.', function (args) {
-		sa.receiveAsData(args[0], function (err, data, response) {
+var downloadFile = function(key){
+			sa.receiveAsData(key, function (err, data, response) {
 			if (err) {
 				c.printError(err.error);
 			} else {
@@ -65,6 +47,23 @@ furious
 					else c.printSuccess('Received - ' + fileName);
 				});
 			}
+		});
+};
+
+furious
+	.command('send', 'Send a file.', function (args) {
+			args.forEach(function (val) {
+				uploadFile(val);
+			});
+	})
+	.alias(['s']);
+
+
+
+furious
+	.command('receive', 'Receive a file.', function (args) {
+		args.forEach(function(value){
+			downloadFile(value);
 		});
 	})
 	.alias(['r']);
