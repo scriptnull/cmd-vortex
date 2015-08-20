@@ -54,9 +54,10 @@ vortex receive <key1> <key2> <key3>
 ## Contribution 
 More than welcomed !
 
-## Features to be added 
+## Things to be done
 - Sending and receiving directories by compressing it.
-- Detailed documentation and usage instructions
+- Write detailed documentation and usage instructions.
+- Write tests.
 
 ## License
 ![](https://raw.githubusercontent.com/scriptnull/bagpack/master/GPL.png)
