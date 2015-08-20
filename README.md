@@ -25,7 +25,7 @@ Install via git
 ```bash
 git clone https://github.com/scriptnull/cmd-vortex.git 
 cd cmd-vortex
-npm install
+npm install -g
 ```
 ## Usage
 After installing , cmd-vortex will be available as a command line.
