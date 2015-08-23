@@ -55,7 +55,7 @@ var Command = function(command , description ,  operation ) {
 };
 var getCommandByCommandName = function(name){
 	//if operation for a command is specified twice then , first definition will be considered and rest are rejected. 
-	return commandList.filter(function(cmd){ return cmd.command == name; })[0];
+	return commandList.filter(function(cmd){ return cmd.command == name || cmd.aliasArr.indexOf(name) != -1  ; })[0];
 };
 //Option
 var Option = function( optionNames , description ,   operation ){
